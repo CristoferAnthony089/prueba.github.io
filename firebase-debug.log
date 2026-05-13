@@ -1,0 +1,83 @@
+[debug] [2026-05-13T22:14:59.136Z] ----------------------------------------------------------------------
+[debug] [2026-05-13T22:14:59.144Z] Command:       /opt/homebrew/Cellar/node/25.1.0_2/bin/node /opt/homebrew/bin/firebase init
+[debug] [2026-05-13T22:14:59.144Z] CLI Version:   15.17.0
+[debug] [2026-05-13T22:14:59.144Z] Platform:      darwin
+[debug] [2026-05-13T22:14:59.144Z] Node Version:  v25.1.0
+[debug] [2026-05-13T22:14:59.144Z] Time:          Wed May 13 2026 16:14:59 GMT-0600 (Central Standard Time)
+[debug] [2026-05-13T22:14:59.144Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Applications/XAMPP/xamppfiles/htdocs/prueba.github.io
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-05-13T22:15:08.146Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-13T22:15:08.149Z] > authorizing via signed-in user (cristo045millanperez@gmail.com)
+[debug] [2026-05-13T22:15:08.154Z] Checked if tokens are valid: true, expires at: 1778712876807
+[debug] [2026-05-13T22:15:08.154Z] Checked if tokens are valid: true, expires at: 1778712876807
+[debug] [2026-05-13T22:15:08.157Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/raspados-6c0ac [none]
+[debug] [2026-05-13T22:15:08.528Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/raspados-6c0ac 200
+[debug] [2026-05-13T22:15:08.528Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/raspados-6c0ac {"projectId":"raspados-6c0ac","projectNumber":"655146695070","displayName":"raspados","name":"projects/raspados-6c0ac","resources":{"hostingSite":"raspados-6c0ac","realtimeDatabaseInstance":"raspados-6c0ac-default-rtdb"},"state":"ACTIVE","etag":"1_62e011fe-1bbb-4f7e-955a-ca0f2a54e5d1"}
+[info] i  Using project raspados-6c0ac (raspados) . 
+[info] 
+=== Hosting Setup
+[debug] [2026-05-13T22:15:08.544Z] Checked if tokens are valid: true, expires at: 1778712876807
+[debug] [2026-05-13T22:15:08.545Z] Checked if tokens are valid: true, expires at: 1778712876807
+[debug] [2026-05-13T22:15:08.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/raspados-6c0ac [none]
+[debug] [2026-05-13T22:15:08.655Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/raspados-6c0ac 200
+[debug] [2026-05-13T22:15:08.655Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/raspados-6c0ac {"projectId":"raspados-6c0ac","projectNumber":"655146695070","displayName":"raspados","name":"projects/raspados-6c0ac","resources":{"hostingSite":"raspados-6c0ac","realtimeDatabaseInstance":"raspados-6c0ac-default-rtdb"},"state":"ACTIVE","etag":"1_62e011fe-1bbb-4f7e-955a-ca0f2a54e5d1"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2026-05-13T22:15:20.287Z] Error: ENOENT: no such file or directory, mkdir '/pwab'
+    at Object.mkdirSync (node:fs:1325:26)
+    at module.exports.makeDirSync (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/mkdirs/make-dir.js:23:13)
+    at Object.createFileSync (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/ensure/file.js:59:45)
+    at Config.writeProjectFile (/opt/homebrew/lib/node_modules/firebase-tools/lib/config.js:166:12)
+    at Config.askWriteProjectFile (/opt/homebrew/lib/node_modules/firebase-tools/lib/config.js:215:14)
+    at async Object.actuate (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:128:9)
+    at async init (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/index.js:105:17)
+    at async Command.initAction [as actionFn] (/opt/homebrew/lib/node_modules/firebase-tools/lib/commands/init.js:232:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-13T22:15:23.300Z] ----------------------------------------------------------------------
+[debug] [2026-05-13T22:15:23.306Z] Command:       /opt/homebrew/Cellar/node/25.1.0_2/bin/node /opt/homebrew/bin/firebase init
+[debug] [2026-05-13T22:15:23.307Z] CLI Version:   15.17.0
+[debug] [2026-05-13T22:15:23.307Z] Platform:      darwin
+[debug] [2026-05-13T22:15:23.307Z] Node Version:  v25.1.0
+[debug] [2026-05-13T22:15:23.307Z] Time:          Wed May 13 2026 16:15:23 GMT-0600 (Central Standard Time)
+[debug] [2026-05-13T22:15:23.307Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Applications/XAMPP/xamppfiles/htdocs/prueba.github.io
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
